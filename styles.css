@@ -1,0 +1,99 @@
+@import url('reset.css');
+
+/* General Styling */
+* {
+  box-sizing: border-box;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+.clearfix::after {
+  clear:both;
+}
+.indent {
+  text-indent: 30px;
+}
+body {
+  font: 28px normal Helvetica, Arial, sans-serif;
+  width: 680px;
+  border: 2px solid black;
+  margin: 5px;
+  padding: 17px;
+}
+/* HEADER */
+h1 {
+  font-size: 2em;
+}
+h2 {
+  border-bottom: 1px solid black;
+}
+h2,
+dl {
+  padding: 5px 0;
+}
+span {
+  font-weight: bold;
+}
+header p:nth-of-type(2) {
+  padding-bottom: 5px;
+  border-bottom: 30px solid black;
+}
+header {
+  border-bottom: 15px solid black;
+  margin-bottom: 20px;
+}
+dl:first-of-type,
+dt,
+dd {
+  float: left;
+}
+dl:nth-of-type(2) {
+  float:right;
+}
+dt::after {
+  content: "\00a0";
+}
+
+/* Main body (table) */
+table {
+  width: 100%;
+}
+thead th {
+  border-bottom: 1px solid black;
+}
+thead th:last-of-type {
+  text-align: right;
+}
+main td:nth-of-type(2) {
+  text-align: left;
+}
+main td:nth-of-type(3) {
+  text-align: right;
+}
+main td {
+  border-bottom: 1px solid black;
+}
+main tr:nth-of-type(9) {
+  border-bottom: 20px solid black;
+}
+main p {
+  padding: 20px 0;
+  font-size: 0.9em;
+}
+td {
+  padding: 2px 0;
+}
+
+/* Footer table */
+footer {
+  font-size: 0.8em;
+}
+footer thead tr th,
+footer thead tr th:last-child,
+footer td:nth-of-type(2),
+footer td:nth-of-type(3),
+footer td:nth-of-type(4) {
+  text-align: left;
+}
